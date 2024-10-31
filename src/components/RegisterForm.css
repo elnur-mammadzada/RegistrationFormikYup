@@ -1,0 +1,71 @@
+/* Ümumi Form Dizaynı */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(135deg, #74b9ff, #a29bfe);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.register-form:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.3);
+}
+
+/* MUI TextField Üslubları */
+.MuiFilledInput-root {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.MuiFilledInput-root:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Checkbox Sahəsi */
+.checkbox-field {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: white;
+}
+
+.checkbox-field input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+/* Buton Dizaynı */
+.submit-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.4s, transform 0.2s;
+}
+
+.submit-button:hover {
+  background-color: #a29bfe;
+  transform: translateY(-3px);
+}
+
+/* Media Query - Kiçik Ekranlar Üçün */
+@media (max-width: 500px) {
+  .register-form {
+    width: 90%;
+    padding: 30px;
+  }
+}
